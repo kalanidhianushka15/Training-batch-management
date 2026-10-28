@@ -1,0 +1,153 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: navy;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.delete {
+  background-color: crimson;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: navy;
+  color: white;
+}
+
+select {
+  padding: 8px;
+}
+
+.msg {
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.msg.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.msg.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: navy;
+}
+
+h2 {
+  color: navy;
+  margin-top: 30px;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.green { background-color: #2e7d32; }
+.badge.orange { background-color: #ef6c00; }
+.badge.red { background-color: crimson; }
+.badge.blue { background-color: #1565c0; }
+.badge.grey { background-color: #757575; }
+
+tr.warn td {
+  background-color: #fff3cd;
+}
+
+button.small {
+  padding: 4px 10px;
+}
+
+button.green {
+  background-color: #2e7d32;
+}
+
+button.grey {
+  background-color: #757575;
+}
+
+.summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  color: navy;
+  margin-top: 10px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .grid2 { grid-template-columns: 1fr; }
+  form { flex-wrap: wrap; }
+}
+
+@media print {
+  form, .no-print, button { display: none; }
+}
